@@ -11,7 +11,7 @@
         We provide end-to-end financial, compliance, and advisory services designed to help businesses operate efficiently, stay compliant, and achieve sustainable growth.
     </p>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Core Accounting Services</h2>
         <div class="mt-[34px] mx-auto grid max-w-[1100px] grid-cols-1 gap-[30px] min-[861px]:grid-cols-3">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Taxation & Compliance Services</h2>
         <div class="mt-[34px] mx-auto grid max-w-[1100px] grid-cols-1 gap-[30px] min-[861px]:grid-cols-2">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Audit & Assurance</h2>
         <div class="mt-[34px] grid max-w-[760px] grid-cols-1 gap-[30px]">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Corporate Secretarial Services</h2>
         <div class="mt-[34px] grid max-w-[760px] grid-cols-1 gap-[30px]">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Strategic & Advisory Services</h2>
         <div class="mt-[34px] mx-auto grid max-w-[1100px] grid-cols-1 gap-[30px] min-[861px]:grid-cols-3">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <div class="mt-[42px]">
+    <div class="mt-[42px] py-[34px]">
         <h2 class="mb-[22px] text-center text-[28px] font-bold text-brand-800 min-[861px]:text-left">Accounting Systems & Digital Solutions</h2>
         <div class="mt-[34px] grid max-w-[760px] grid-cols-1 gap-[30px]">
             <div class="rounded-lg border border-soft-border bg-white px-7 py-[34px] text-left shadow-brand">
