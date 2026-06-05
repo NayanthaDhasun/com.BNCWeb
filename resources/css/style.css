@@ -414,8 +414,10 @@ main {
 }
 
 .pricing-section h2,
-.home-pricing h2,
-.home-why h2 {
+.home-faq h2,
+.home-contact h2,
+.home-why h2,
+.service-category h2 {
     color: var(--blue-800);
     font-size: 34px;
     margin-bottom: 22px;
@@ -423,8 +425,10 @@ main {
 }
 
 .support-grid,
+.tax-pricing-grid,
 .why-grid,
-.pricing-preview-grid {
+.pricing-preview-grid,
+.contact-summary-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
@@ -432,7 +436,8 @@ main {
 
 .support-item,
 .faq-item,
-.pricing-preview-card {
+.pricing-preview-card,
+.contact-summary-card {
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -440,18 +445,21 @@ main {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.support-item {
+.support-item,
+.contact-summary-card {
     padding: 22px;
     display: grid;
     gap: 8px;
 }
 
-.support-item span {
+.support-item span,
+.contact-summary-card span {
     color: var(--muted);
     font-weight: 700;
 }
 
-.support-item strong {
+.support-item strong,
+.contact-summary-card strong {
     color: var(--blue-800);
     line-height: 1.4;
 }
@@ -464,6 +472,22 @@ main {
     padding: 18px;
     font-weight: 800;
     text-align: center;
+}
+
+.detailed-why-grid div {
+    background: var(--white);
+    text-align: left;
+}
+
+.detailed-why-grid strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.detailed-why-grid p {
+    color: var(--muted);
+    font-weight: 400;
+    line-height: 1.65;
 }
 
 .faq-list {
@@ -487,10 +511,15 @@ main {
     line-height: 1.7;
 }
 
-.home-pricing {
+.home-faq,
+.home-contact {
     padding: 80px 70px;
     text-align: center;
     background: var(--white);
+}
+
+.home-contact {
+    background: var(--blue-50);
 }
 
 .home-why {
@@ -532,6 +561,42 @@ main {
 
 .featured-preview {
     border-color: var(--blue-600);
+}
+
+.service-category {
+    margin-top: 42px;
+}
+
+.services-page .service-category h2 {
+    text-align: left;
+    font-size: 28px;
+}
+
+.two-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.one-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 760px;
+    margin-left: 0;
+}
+
+.tax-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.tax-box h3 {
+    color: var(--blue-800);
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.contact-summary-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 footer {
@@ -691,6 +756,41 @@ footer p {
     box-shadow: 0 0 0 4px rgba(11, 115, 217, 0.12);
 }
 
+.form-status,
+.form-errors {
+    border-radius: 8px;
+    padding: 14px 16px;
+    line-height: 1.6;
+}
+
+.form-status {
+    background: #e9f8ef;
+    border: 1px solid #9ed8b2;
+    color: #14532d;
+    font-weight: 800;
+}
+
+.form-errors {
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    color: #9f1239;
+}
+
+.form-errors p {
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.form-errors ul {
+    padding-left: 20px;
+}
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 @media (max-width: 860px) {
     .navbar {
         padding: 16px 24px;
@@ -715,15 +815,22 @@ footer p {
     .cards,
     .pricing-grid,
     .support-grid,
+    .tax-pricing-grid,
     .why-grid,
     .pricing-preview-grid,
+    .contact-summary-grid,
     .contact-layout {
         grid-template-columns: 1fr;
     }
 
-    .home-pricing,
+    .home-faq,
+    .home-contact,
     .home-why {
         padding: 64px 24px;
+    }
+
+    .services-page .service-category h2 {
+        text-align: center;
     }
 }
 
