@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <form class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-brand" action="/contact" method="POST">
+        <form id="contact-form" class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-brand" action="/contact" method="POST">
             @csrf
 
             @if (session('status'))
@@ -98,5 +98,30 @@
         </form>
     </div>
 </section>
+
+<script>
+    document.getElementById('contact-form')?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!this.reportValidity()) {
+            return;
+        }
+
+        const formData = new FormData(this);
+        const message = [
+            'New contact message from Blue Navigate Consulting website',
+            '',
+            `Name: ${formData.get('name')}`,
+            `Email: ${formData.get('email')}`,
+            `Phone: ${formData.get('phone') || 'Not provided'}`,
+            `Service Interest: ${formData.get('service')}`,
+            '',
+            'Message:',
+            formData.get('message'),
+        ].join('\n');
+
+        window.open(`https://wa.me/94717092958?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+</script>
 
 @endsection
