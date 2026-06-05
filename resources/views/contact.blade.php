@@ -13,31 +13,31 @@
 
     <div class="grid grid-cols-1 items-start gap-7 min-[861px]:grid-cols-[0.85fr_1.15fr]">
         <div class="grid gap-[18px]">
-            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
+            <div class="rounded-lg  border border-soft-border bg-white p-6  shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Business Inquiries</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Send us a message about accounting, tax, advisory, company secretarial, or virtual CFO services.</p>
                 <a href="mailto:info@bncpartner.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">info@bncpartner.com</a>
             </div>
 
-            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
+            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Consultation Hours</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Available every day</p>
                 <strong class="text-ink">24×7 Business Support</strong>
             </div>
 
-            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
+            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Branches</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Serving clients through our Kandy and Colombo branches.</p>
                 <strong class="text-ink">Kandy and Colombo</strong>
             </div>
 
-            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
+            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">What to Include</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Briefly describe your business, the service you need, and whether you require monthly support, tax filing, registration, or advisory services.</p>
             </div>
         </div>
 
-        <form id="contact-form" class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-brand" action="/contact" method="POST">
+        <form class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-[0_10px_22px_rgba(7,94,184,0.22)]" action="/contact" method="POST">
             @csrf
 
             @if (session('status'))
@@ -92,7 +92,10 @@
             </div>
 
             <div class="flex flex-wrap gap-3">
-                <button type="submit" class="inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-transparent bg-brand-700 px-[26px] py-[13px] font-extrabold text-white no-underline shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-0.5 hover:bg-brand-800 min-[521px]:w-auto">Send Message</button>
+                <button type="submit" class="inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-transparent bg-brand-700 px-[26px] py-[13px] font-extrabold text-white bg-blue-700 no-underline shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-0.5 hover:bg-blue-800 min-[521px]:w-auto">Send Message</button>
+
+
+
                 
             </div>
         </form>

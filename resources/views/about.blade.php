@@ -14,9 +14,10 @@
         and digital business solutions.
     </p>
 
-    <a href="/pricing" class="mt-3.5 inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-transparent bg-brand-700 px-[26px] py-[13px] font-extrabold text-white no-underline shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-0.5 hover:bg-brand-800 min-[521px]:w-auto">View Consulting Plans</a>
+    <a href="/pricing" class="mt-3.5 inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-transparent bg-blue-700 px-[26px] py-[13px] font-extrabold text-white no-underline shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-0.5 hover:bg-brand-800 min-[521px]:w-auto">View Consulting Plans</a>  
+</section>
 
-    <section class="mt-[58px]">
+<section class="mt-[58px] bg-blue-50 py-[82px]">
         <h2 class="mb-[22px] text-center text-[34px] font-bold text-brand-800">FAQ</h2>
         <div class="mx-auto grid max-w-[900px] gap-4">
             <div class="rounded-[14px] border border-soft-border bg-white p-6 shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
@@ -35,6 +36,5 @@
             </div>
         </div>
     </section>
-</section>
 
 @endsection
