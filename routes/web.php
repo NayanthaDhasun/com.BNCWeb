@@ -38,7 +38,7 @@ Route::post('/contact', function (Request $request) {
         '',
         'Name: ' . $data['name'],
         'Email: ' . $data['email'],
-        'Phone: ' . ($data['phone'] ?: 'Not provided'),
+        'Phone: ' . ($data['phone'] ?: '+94717092958'),
         'Service Interest: ' . $data['service'],
         '',
         'Message:',
@@ -48,7 +48,7 @@ Route::post('/contact', function (Request $request) {
     try {
         Mail::raw($emailBody, function ($message) use ($data) {
             $message
-                ->to('nayanthasr@gmail.com')
+                ->to('info@bncpartner.com')
                 ->replyTo($data['email'], $data['name'])
                 ->subject('New website contact message');
         });

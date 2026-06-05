@@ -113,7 +113,7 @@
     <div class="mx-auto grid max-w-[1100px] grid-cols-1 gap-[18px] text-left min-[861px]:grid-cols-3">
         <div class="grid gap-2 rounded-[14px] border border-soft-border bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
             <span class="font-bold text-muted">Business Inquiries</span>
-            <a href="mailto:nayanthasr@gmail.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">nayanthasr@gmail.com</a>
+            <a href="mailto:info@bncpartner.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">info@bncpartner.com</a>
         </div>
 
         <div class="grid gap-2 rounded-[14px] border border-soft-border bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">

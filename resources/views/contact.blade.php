@@ -16,7 +16,7 @@
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Business Inquiries</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Send us a message about accounting, tax, advisory, company secretarial, or virtual CFO services.</p>
-                <a href="mailto:nayanthasr@gmail.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">nayanthasr@gmail.com</a>
+                <a href="mailto:info@bncpartner.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">info@bncpartner.com</a>
             </div>
 
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-brand">
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <form class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-brand" action="/contact" method="POST">
+        <form id="contact-form" class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-brand" action="/contact" method="POST">
             @csrf
 
             @if (session('status'))
@@ -93,10 +93,35 @@
 
             <div class="flex flex-wrap gap-3">
                 <button type="submit" class="inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-transparent bg-brand-700 px-[26px] py-[13px] font-extrabold text-white no-underline shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-0.5 hover:bg-brand-800 min-[521px]:w-auto">Send Message</button>
-                <button type="submit" class="inline-flex min-h-[46px] w-full items-center justify-center rounded-lg border border-soft-border bg-white px-[26px] py-[13px] font-extrabold text-brand-700 no-underline transition hover:-translate-y-0.5 hover:border-[#b9d8f4] hover:bg-brand-100 min-[521px]:w-auto">Send Email</button>
+                
             </div>
         </form>
     </div>
 </section>
+
+<script>
+    document.getElementById('contact-form')?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!this.reportValidity()) {
+            return;
+        }
+
+        const formData = new FormData(this);
+        const message = [
+            'New contact message from Blue Navigate Consulting website',
+            '',
+            `Name: ${formData.get('name')}`,
+            `Email: ${formData.get('email')}`,
+            `Phone: ${formData.get('phone') || 'Not provided'}`,
+            `Service Interest: ${formData.get('service')}`,
+            '',
+            'Message:',
+            formData.get('message'),
+        ].join('\n');
+
+        window.open(`https://wa.me/94717092958?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+</script>
 
 @endsection
