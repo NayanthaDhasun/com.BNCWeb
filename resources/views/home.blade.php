@@ -121,7 +121,7 @@
       <div class="grid grid-cols-1 gap-[18px]">
         <div class="grid gap-2 rounded-[14px] border border-soft-border bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
           <span class="text-muted">Business Inquiries</span>
-          <a href="mailto:nayanthasr@gmail.com" class="font-extrabold text-gray-500 no-underline text-blue">nayanthasr@gmail.com</a>
+          <a href="mailto:info@bncpartner.com" class="font-extrabold text-gray-500 no-underline text-blue">info@bncpartner.com</a>
         </div>
 
         <div class="grid gap-2 rounded-[14px] border border-soft-border bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">

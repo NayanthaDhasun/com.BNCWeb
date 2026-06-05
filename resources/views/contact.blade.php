@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <form class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-[0_10px_22px_rgba(7,94,184,0.22)]" action="/contact" method="POST">
+        <form id="contact-form" class="grid gap-[18px] rounded-lg border border-soft-border bg-white p-[30px] shadow-[0_10px_22px_rgba(7,94,184,0.22)]" action="/contact" method="POST">
             @csrf
 
             @if (session('status'))

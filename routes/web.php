@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -33,30 +32,17 @@ Route::post('/contact', function (Request $request) {
         'message' => ['required', 'string', 'max:5000'],
     ]);
 
-    $emailBody = implode("\n", [
+    $whatsappMessage = implode("\n", [
         'New contact message from Blue Navigate Consulting website',
         '',
         'Name: ' . $data['name'],
         'Email: ' . $data['email'],
-        'Phone: ' . ($data['phone'] ?: '+94717092958'),
+        'Phone: ' . ($data['phone'] ?: 'Not provided'),
         'Service Interest: ' . $data['service'],
         '',
         'Message:',
         $data['message'],
     ]);
 
-    try {
-        Mail::raw($emailBody, function ($message) use ($data) {
-            $message
-                ->to('info@bncpartner.com')
-                ->replyTo($data['email'], $data['name'])
-                ->subject('New website contact message');
-        });
-    } catch (\Throwable) {
-        return back()
-            ->withInput()
-            ->withErrors(['email' => 'Your message could not be sent right now. Please try again later.']);
-    }
-
-    return back()->with('status', 'Your message has been sent.');
+    return redirect()->away('https://wa.me/94717092958?text=' . rawurlencode($whatsappMessage));
 });
