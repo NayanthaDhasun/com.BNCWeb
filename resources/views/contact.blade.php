@@ -16,7 +16,7 @@
             <div class="rounded-lg  border border-soft-border bg-white p-6  shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
                 <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Business Inquiries</h2>
                 <p class="mb-3 leading-[1.7] text-muted">Send us a message about accounting, tax, advisory, company secretarial, or virtual CFO services.</p>
-                <a href="mailto:nayanthasr@gmail.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">nayanthasr@gmail.com</a>
+                <a href="mailto:info@bncpartner.com" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">info@bncpartner.com</a>
             </div>
 
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
@@ -101,5 +101,30 @@
         </form>
     </div>
 </section>
+
+<script>
+    document.getElementById('contact-form')?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!this.reportValidity()) {
+            return;
+        }
+
+        const formData = new FormData(this);
+        const message = [
+            'New contact message from Blue Navigate Consulting website',
+            '',
+            `Name: ${formData.get('name')}`,
+            `Email: ${formData.get('email')}`,
+            `Phone: ${formData.get('phone') || 'Not provided'}`,
+            `Service Interest: ${formData.get('service')}`,
+            '',
+            'Message:',
+            formData.get('message'),
+        ].join('\n');
+
+        window.open(`https://wa.me/94717092958?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+</script>
 
 @endsection
