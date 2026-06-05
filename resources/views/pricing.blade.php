@@ -131,12 +131,12 @@
 
     <section class="mt-[58px]  py-[82px]">
         <h2 class="mb-[22px] text-center text-[34px] font-bold text-brand-800">Customized Support</h2>
-        <div class="grid grid-cols-1 gap-[18px]  shadow-[0_14px_28px_rgba(7,94,184,0.25)] min-[861px]:grid-cols-3">
+        <div class="grid grid-cols-1 gap-[18px]   min-[861px]:grid-cols-3">
             <div class="grid gap-2 rounded-[14px] bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
                 <span class="font-bold text-muted">Advisory and CFO</span>
                 <strong class="leading-[1.4] text-brand-800">Starting from USD 185 / LKR 60,000 per month</strong>
             </div>
-            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
+            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px]  shadow-[0_14px_28px_rgba(7,94,184,0.25)]  transition hover:-translate-y-1 hover:shadow-brand-lg">
                 <span class="font-bold text-muted">Exclusive Virtual Services</span>
                 <strong class="leading-[1.4] text-brand-800">Virtual accounting, finance, compliance, and CFO support</strong>
             </div>
@@ -144,7 +144,7 @@
                 <span class="font-bold text-muted">Business Consultancy</span>
                 <strong class="leading-[1.4] text-brand-800">LKR 5,000 - 25,000 per session</strong>
             </div>
-            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
+            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px] shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-1 hover:shadow-brand-lg">
                 <span class="font-bold text-muted">Payroll Services</span>
                 <strong class="leading-[1.4] text-brand-800">From LKR 8,000/month + per employee</strong>
             </div>
@@ -152,7 +152,7 @@
                 <span class="font-bold text-muted">Company Secretarial</span>
                 <strong class="leading-[1.4] text-brand-800">LKR 15,000 - 40,000/year</strong>
             </div>
-            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px] shadow-brand transition hover:-translate-y-1 hover:shadow-brand-lg">
+            <div class="grid gap-2 rounded-[14px]  bg-white p-[22px] shadow-[0_14px_28px_rgba(7,94,184,0.25)] transition hover:-translate-y-1 hover:shadow-brand-lg">
                 <span class="font-bold text-muted">Accounting Package Setup</span>
                 <strong class="leading-[1.4] text-brand-800">Quoted after review</strong>
             </div>
