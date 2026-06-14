@@ -9,7 +9,7 @@
 </head>
 <body class="min-h-screen bg-linear-to-b from-white to-brand-50 font-sans text-ink">
 
-<nav class="sticky top-0 z-10 flex flex-col items-center gap-4 border-b border-soft-border bg-white/95 px-6 py-4 shadow-[0_8px_30px_rgba(15,65,120,0.08)] min-[861px]:flex-row min-[861px]:justify-between min-[861px]:gap-0 min-[861px]:px-[70px] min-[861px]:py-2">
+<nav class="sticky top-0 z-50 flex flex-col items-center gap-4 border-b border-soft-border bg-white/95 px-6 py-4 shadow-[0_8px_30px_rgba(15,65,120,0.08)] min-[861px]:flex-row min-[861px]:justify-between min-[861px]:gap-0 min-[861px]:px-[70px] min-[861px]:py-2">
     <!-- Logo Wrapper - Mobile alignment and scaling fixed -->
     <a href="/" class="inline-flex h-14 w-auto items-center justify-center no-underline leading-none min-[521px]:h-20" aria-label="Blue Navigate Consulting home">
         <img src="{{ asset('images/logo4.png') }}" 

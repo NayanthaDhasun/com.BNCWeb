@@ -20,15 +20,44 @@
             </div>
 
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
-                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Consultation Hours</h2>
-                <p class="mb-3 leading-[1.7] text-muted">Available every day</p>
-                <strong class="text-ink">24×7 Business Support</strong>
+                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">WhatsApp</h2>
+                <p class="mb-3 leading-[1.7] text-muted">Message us directly for accounting, tax, payroll, or advisory inquiries.</p>
+                <a href="https://wa.me/94717092958" class="font-extrabold text-brand-700 no-underline hover:text-brand-900">+94 71 709 2958</a>
             </div>
 
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
-                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Branches</h2>
-                <p class="mb-3 leading-[1.7] text-muted">Serving clients through our Kandy and Colombo branches.</p>
-                <strong class="text-ink">Kandy and Colombo</strong>
+                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Consultation Hours</h2>
+                <p class="mb-3 leading-[1.7] text-muted">Available every day</p>
+                <strong class="text-ink">We respond within 24 hours</strong>
+            </div>
+
+            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
+                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Service Area</h2>
+                <p class="mb-3 leading-[1.7] text-muted">Serving clients across Sri Lanka and globally.</p>
+                <strong class="text-ink">Sri Lanka and global clients</strong>
+            </div>
+
+            <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
+                <h2 class="mb-2.5 text-[22px] font-bold text-brand-800">Social Media</h2>
+                <p class="mb-4 leading-[1.7] text-muted">Connect with Blue Navigate Consulting online.</p>
+                <div class="grid grid-cols-2 gap-3 min-[521px]:grid-cols-4">
+                    <a href="https://www.facebook.com/share/17nT5URZXM/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="group grid min-h-[86px] place-items-center rounded-lg border border-blue-100 bg-blue-50 p-3 text-center no-underline transition hover:-translate-y-0.5 hover:bg-blue-100">
+                        <span class="grid h-10 w-10 place-items-center rounded-lg bg-[#1877F2] text-xl font-black text-white">f</span>
+                        <span class="mt-2 text-xs font-extrabold text-blue-800">Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/blue-navigate-consulting/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="group grid min-h-[86px] place-items-center rounded-lg border border-sky-100 bg-sky-50 p-3 text-center no-underline transition hover:-translate-y-0.5 hover:bg-sky-100">
+                        <span class="grid h-10 w-10 place-items-center rounded-lg bg-[#0A66C2] text-sm font-black text-white">in</span>
+                        <span class="mt-2 text-xs font-extrabold text-sky-800">LinkedIn</span>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="group grid min-h-[86px] place-items-center rounded-lg border border-pink-100 bg-pink-50 p-3 text-center no-underline transition hover:-translate-y-0.5 hover:bg-pink-100">
+                        <span class="grid h-10 w-10 place-items-center rounded-lg bg-[linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4)] text-base font-black text-white">◎</span>
+                        <span class="mt-2 text-xs font-extrabold text-pink-800">Instagram</span>
+                    </a>
+                    <a href="https://wa.me/94717092958" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="group grid min-h-[86px] place-items-center rounded-lg border border-green-100 bg-green-50 p-3 text-center no-underline transition hover:-translate-y-0.5 hover:bg-green-100">
+                        <span class="grid h-10 w-10 place-items-center rounded-lg bg-[#25D366] text-sm font-black text-white">WA</span>
+                        <span class="mt-2 text-xs font-extrabold text-green-800">WhatsApp</span>
+                    </a>
+                </div>
             </div>
 
             <div class="rounded-lg border border-soft-border bg-white p-6 shadow-[0_10px_22px_rgba(7,94,184,0.22)]">
@@ -82,6 +111,15 @@
             </div>
 
             <div class="grid gap-2">
+                <label for="remote_support" class="font-extrabold text-brand-800">Remote/Online Accounting Support</label>
+                <select id="remote_support" name="remote_support" required class="w-full rounded-lg border border-soft-border bg-white px-3.5 py-[13px] font-[inherit] text-ink outline-none transition focus:border-brand-600 focus:shadow-[0_0_0_4px_rgba(11,115,217,0.12)]">
+                    <option value="" disabled @selected(old('remote_support') === null)>Select an option</option>
+                    <option @selected(old('remote_support') === 'Yes, I need remote/online support')>Yes, I need remote/online support</option>
+                    <option @selected(old('remote_support') === 'No, I prefer in-person support')>No, I prefer in-person support</option>
+                </select>
+            </div>
+
+            <div class="grid gap-2">
                 <label for="phone" class="font-extrabold text-brand-800">Contact Number (Optional)</label>
                 <input type="tel" id="phone" name="phone" placeholder="Your contact number" value="{{ old('phone') }}" class="w-full rounded-lg border border-soft-border bg-white px-3.5 py-[13px] font-[inherit] text-ink outline-none transition focus:border-brand-600 focus:shadow-[0_0_0_4px_rgba(11,115,217,0.12)]">
             </div>
@@ -118,6 +156,7 @@
             `Email: ${formData.get('email')}`,
             `Phone: ${formData.get('phone') || 'Not provided'}`,
             `Service Interest: ${formData.get('service')}`,
+            `Remote/Online Accounting Support: ${formData.get('remote_support')}`,
             '',
             'Message:',
             formData.get('message'),

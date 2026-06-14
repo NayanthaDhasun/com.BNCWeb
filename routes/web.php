@@ -28,6 +28,7 @@ Route::post('/contact', function (Request $request) {
         'name' => ['required', 'string', 'max:255'],
         'email' => ['required', 'email', 'max:255'],
         'service' => ['required', 'string', 'max:255'],
+        'remote_support' => ['required', 'string', 'max:255'],
         'phone' => ['nullable', 'string', 'max:50'],
         'message' => ['required', 'string', 'max:5000'],
     ]);
@@ -39,6 +40,7 @@ Route::post('/contact', function (Request $request) {
         'Email: ' . $data['email'],
         'Phone: ' . ($data['phone'] ?: 'Not provided'),
         'Service Interest: ' . $data['service'],
+        'Remote/Online Accounting Support: ' . $data['remote_support'],
         '',
         'Message:',
         $data['message'],
